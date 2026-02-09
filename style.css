@@ -114,7 +114,7 @@ header p {
 
     gap: 25px;
 }
-@media screen and (min-width:500px) {
+
     
 
 .card {
@@ -130,7 +130,7 @@ header p {
     display:flex;
     overflow-x: hidden;
 }
-}
+
 .card a{
     text-decoration:none;
     color: inherit;
@@ -301,3 +301,4 @@ form{
     margin-top: 10px;
     margin-left: 5px;
 }
+
