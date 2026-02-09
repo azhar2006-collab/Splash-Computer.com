@@ -1,0 +1,485 @@
+
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+
+}
+body {
+background: linear-gradient(135deg, #000000, #032057);
+
+
+
+    color: white;
+    color: #333;
+    overflow-x: hidden;
+}
+
+
+header {
+    
+    color: white;
+    padding: 25px 10%;
+    text-align: center;
+
+  
+    gap: 12px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    
+}
+
+header p {
+    opacity: 0.9;
+    margin: 8px 0 15px;
+}
+
+
+    
+
+ 
+    
+
+.nav1 {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    
+    
+    
+}
+
+
+.nav1 a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border:none;
+    border-radius: 30px;
+    transition: 0.50s ease;
+    font-weight: 500;
+    border-color: aliceblue;
+    font-family: fantasy;
+ 
+    
+}
+
+.nav1 a:hover {
+    background: white;
+    color: #2c5364;
+    transform: translateY(-2px);
+}
+
+
+.hero {
+    padding: 80px 10%;
+    text-align: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+
+.section {
+    padding: 50px 10%;
+    text-align: center;
+    display: inline;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #d2dbdf;
+    font-family:cursive ;
+    
+    
+}
+
+.cards {
+    display:flex;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+
+    gap: 25px;
+}
+@media screen and (min-width:500px) {
+    
+
+.card {
+    text-decoration: none;
+    color: inherit;
+    background: white;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-weight: 1000;
+    display:flex;
+    overflow-x: hidden;
+}
+}
+.card a{
+    text-decoration:none;
+    color: inherit;
+    
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: rgb(224, 203, 80);
+    color: white;
+}
+
+
+.section.dark {
+    background: #171b1d, #151516;
+    color: white;
+}
+
+.section.dark h2 {
+    color: white;
+}
+
+.section.dark ul {
+    list-style: none;
+    max-width: 500px;
+    margin: auto;
+}
+
+.section.dark li {
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+
+form {
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    gap: 15px;
+    background-color: #051531;
+}
+
+input, textarea {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+
+#topBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 18px;
+    background: #2c5364;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+}
+
+#topBtn:hover {
+    background: #667eea;
+    transform: translateY(-5px);
+}
+
+
+footer {
+    background: #fcfcfc;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    padding: 15px;
+    margin-top: 390px;
+
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo-container img {
+    width: 100px;   
+    height: auto;
+}
+
+.logo-container h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+.nav4{
+    top: 0%;
+    margin-bottom: 30%;
+    
+}
+
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.social-icons img {
+    width: 30px;   
+    height: 32px;
+    display: grid;
+}
+.sub{
+    border-radius: 10px;
+    width: auto;
+    padding: 10px;
+    cursor: pointer;
+}
+form{
+    width: 350px;
+}
+.sub:active{
+    background-color: rgb(155, 160, 165);
+    
+}
+.black_overlay {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .80;
+  filter: alpha(opacity=80);
+}
+.white_content {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  padding: 16px;
+  border: 16px solid orange;
+  background-color: white;
+  z-index: 1002;
+  overflow: auto;
+}
+.white_content p{
+    text-decoration: none;
+    color: inherit;
+}
+#pic1{
+    width: 395px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> | Repair & Custom PC Builds</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="nav1">
+    <a href="#Home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#" onclick="window.location.href='index1.html'">Contact</a>
+</nav>
+
+<header>
+    <div class="logo-container">
+      <img class="img" src="logo.png.49 PM" alt="Splash Computers Logo">
+
+
+        <h1>𝔰𝔭𝔩𝔞𝔰𝔥 𝔠𝔬𝔪𝔭𝔲𝔱𝔢𝔯</h1>
+        
+   
+
+    </div>
+
+    <p class="tagline">Your Trusted Computer Repair & Upgrade Experts</p>
+
+
+
+    </header>
+
+
+<section class="hero">
+    <h2>𝔉𝔞𝔰𝔱 • ℜ𝔢𝔩𝔦𝔞𝔟𝔩𝔢 • 𝔄𝔣𝔣𝔬𝔯𝔡𝔞𝔟𝔩𝔢 ℭ𝔬𝔪𝔭𝔲𝔱𝔢𝔯 𝔖𝔬𝔩𝔲𝔱𝔦𝔬𝔫𝔰</h2>
+    <p>Repairs, upgrades & performance-tuned custom PC builds</p>
+ 
+
+
+</section>
+
+<section id="services" class="section">
+    <h2 class="h2">𝔬𝔲𝔯 𝔰𝔢𝔯𝔳𝔦𝔠𝔢𝔰 !!</h2>
+    <div class="cards">
+        <p class="card">
+            <a href="javascript:void(0)" onclick="document.getElementById('light1').style.display='block';document.getElementById('fade').style.display='block'">𝔠𝔬𝔪𝔭𝔩𝔢𝔱𝔢 𝔭𝔠 𝔟𝔲𝔦𝔩𝔡 𝔞𝔫𝔡 𝔭𝔢𝔯𝔣𝔬𝔯𝔪𝔞𝔫𝔠𝔢 𝔲𝔭𝔤𝔯𝔞𝔡𝔢</a>
+             <div id="light1" class="white_content"> <a href="javascript:void(0)" onclick="document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
+              <br> <img id="pic1" src="pic1.jpeg"> </div>
+            </p>
+        <p class="card"><a href="javascript:void(0)" onclick="document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'">
+           𝔠𝔬𝔪𝔭𝔩𝔢𝔱𝔢 𝔥𝔞𝔯𝔡𝔴𝔞𝔯𝔢 𝔞𝔫𝔡 𝔠𝔥𝔦𝔭 𝔩𝔢𝔳𝔢𝔩 𝔯𝔢𝔭𝔞𝔦𝔯
+        </a>
+     <div id="light2" class="white_content"> <a href="javascript:void(0)" onclick="document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
+    <img  id="pic1" src="pic2.jpeg"> </div></p>
+        <p class="card"><a href="javascript:void(0)" onclick="document.getElementById('light3').style.display='block';document.getElementById('fade').style.display='block'">
+        𝔞𝔭𝔭𝔩𝔢 𝔡𝔢𝔳𝔦𝔠𝔢 𝔰𝔞𝔩𝔢𝔰 𝔞𝔫𝔡 𝔱𝔢𝔠𝔥𝔫𝔦𝔠𝔞𝔩 𝔰𝔢𝔯𝔳𝔦𝔠𝔢𝔰 </a> <div id="light3" class="white_content"> <a href="javascript:void(0)" onclick="document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
+             <br><img id="pic1" src="pic3.jpeg"> </div></p>
+        <p class="card"><a href="javascript:void(0)" onclick="document.getElementById('light4').style.display='block';document.getElementById('fade').style.display='block'">
+        𝔫𝔢𝔴 𝔞𝔫𝔡 𝔠𝔢𝔯𝔱𝔦𝔣𝔦𝔢𝔡 𝔯𝔢𝔣𝔲𝔯𝔟𝔦𝔰𝔥𝔢𝔡 𝔩𝔞𝔭𝔱𝔬𝔭</a><div id="light4" class="white_content"> <a href="javascript:void(0)" onclick="document.getElementById('light4').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
+            <img id="pic1" src="pic4.jpeg"> </div></p>
+        <p class="card"><a href="javascript:void(0)" onclick="document.getElementById('light5').style.display='block';document.getElementById('fade').style.display='block'">
+        𝔰𝔶𝔰𝔱𝔢𝔪 𝔲𝔭𝔤𝔯𝔞𝔡𝔢 , 𝔬𝔰 𝔞𝔫𝔡 𝔰𝔬𝔣𝔱𝔴𝔞𝔯𝔢 𝔰𝔬𝔩𝔲𝔱𝔦𝔬𝔫 </a><div id="light5" class="white_content"> <a href="javascript:void(0)" onclick="document.getElementById('light5').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
+           <img id="pic1" src="pic5.jpeg">  </div></p>
+        <p class="card"><a href="javascript:void(0)" onclick="document.getElementById('light6').style.display='block';document.getElementById('fade').style.display='block'">
+        𝔭𝔩𝔞𝔶𝔰𝔱𝔞𝔱𝔦𝔬𝔫 𝔰𝔞𝔩𝔢𝔰 𝔞𝔫𝔡 𝔭𝔯𝔬𝔣𝔢𝔰𝔰𝔦𝔬𝔫𝔞𝔩 𝔲𝔭𝔤𝔯𝔞𝔡𝔢𝔰</a><div id="light6" class="white_content"> <a href="javascript:void(0)" onclick="document.getElementById('light6').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
+         <img id="pic1" src="pic6.jpeg">   </div></p>
+    </div>
+</section>
+
+<section id="why" class="section dark">
+    <h2>Why Choose Splash Computer?</h2>
+    <ul>
+        <li>✔ High-quality branded components</li>
+        <li>✔ Gaming, workstation & office builds</li>
+        <li>✔ Warranty & support</li>
+        <li>✔ Dell, HP, Lenovo & more</li>
+        <li>✔ Budget & eco-friendly</li>
+    </ul>
+    </section>
+
+   
+
+
+<script src="index.js"></script>
+
+    
+<footer class="footer">
+        <p>Follow us</p><br>
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com/_splash_computers_?igsh=MTJsZWJrMHY1anUybg==" target="_blank">
+            <img src="insta.png.png" alt="Instagram">
+        </a>
+
+        <a href="https://www.facebook.com/share/189tyL7R9S/" >
+            <img src="facebook.png.avif" alt="Facebook">
+        </a>
+    </div>
+    <br>
+
+
+
+    <p class="copyright">
+        © 2026 Splash Computer. All Rights Reserved.
+    </p>
+</footer>
+
+
+</body>
+</html>
+
+// Simple smooth scroll effect
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    target.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+
+<link rel="stylesheet" href="style.css">
+<section id="contact" class="section">
+     <nav class="nav1">
+    <a href="index.html">Home</a>
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#" onclick="window.location.href='index1.html'">Contact</a>
+</nav>
+    <h2>Contact Us</h2>
+    <div class="form-container">
+<form action="https://formspree.io/f/mzdaplrd" method="POST">
+
+  <input type="text" name="name" placeholder="Name" required>
+
+  <input type="email" name="email" placeholder="Email" required>
+
+  <input type="tel" name="phone" placeholder="Phone">
+
+  <textarea name="message" placeholder="Message"></textarea>
+
+  <button class="sub" type="submit">Register</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<footer class="footer">
+        <p>Follow us</p><br>
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com/_splash_computers_?igsh=MTJsZWJrMHY1anUybg==" target="_blank">
+            <img src="insta.png.png" alt="Instagram">
+        </a>
+
+        <a href="https://www.facebook.com/share/189tyL7R9S/" >
+            <img src="facebook.png.avif" alt="Facebook">
+        </a>
+    </div>
+    <br>
+        <h2>CONTACT INFO
+
+17, Rameswaram St, Postal Colony, T. Nagar,<br>
+ Chennai, Tamil Nadu 600017
+
+splashcomputersofficial@gmail.com
+
+(+91) 7448584965
+(+91) 9025650331</h2>
+    <br>
+
+
+    <p class="copyright">
+        © 2026 Splash Computer. All Rights Reserved.
+    </p>
+</footer>
