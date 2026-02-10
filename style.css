@@ -230,8 +230,8 @@ header p {
 }
 
 .hero-title {
-    font-size: 2.8rem;
-    margin-bottom: 20px;
+    font-size: 4rem;
+    margin-bottom: 10px;
     background: linear-gradient(135deg, #ffc800, #ffed4e, #ffc800);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -746,11 +746,11 @@ footer {
 
   .hero {
     padding: 60px 5%;
-    min-height: auto;
+    min-height: 15px;
   }
 
   .hero-title {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .hero-subtitle {
@@ -1087,3 +1087,4 @@ footer {
   border-radius: 10px;
   display: block;
 }
+
