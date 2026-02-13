@@ -840,7 +840,7 @@ footer {
     border-radius: 0;
     width: 100%;
     text-align: center;
-    display:grid;
+    display: grid;
   }
 
   .nav1 a:hover {
@@ -1088,5 +1088,6 @@ footer {
   border-radius: 10px;
   display: block;
 }
+
 
 
