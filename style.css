@@ -725,7 +725,7 @@ footer {
   }
 
   .logo-container {
-    flex-direction: column;
+    flex-direction: column
     gap: 15px;
   }
 
@@ -829,7 +829,7 @@ footer {
   }
 
   .nav1 {
-    flex-direction: column;
+
     gap: 0;
     padding: 0;
   }
@@ -840,6 +840,7 @@ footer {
     border-radius: 0;
     width: 100%;
     text-align: center;
+    display:grid;
   }
 
   .nav1 a:hover {
@@ -1087,4 +1088,5 @@ footer {
   border-radius: 10px;
   display: block;
 }
+
 
