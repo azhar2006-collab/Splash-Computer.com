@@ -230,7 +230,7 @@ header p {
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 40px;
     margin-bottom: 10px;
     background: linear-gradient(135deg, #ffc800, #ffed4e, #ffc800);
     -webkit-background-clip: text;
@@ -725,7 +725,7 @@ footer {
   }
 
   .logo-container {
-    flex-direction: column
+    flex-direction: column;
     gap: 15px;
   }
 
@@ -829,7 +829,7 @@ footer {
   }
 
   .nav1 {
-
+    right: 0%;
     gap: 0;
     padding: 0;
   }
@@ -838,9 +838,8 @@ footer {
     padding: 12px;
     font-size: 0.85rem;
     border-radius: 0;
-    width: 100%;
-    text-align: center;
-    display: grid;
+    display:grid;
+    right: 0px;
   }
 
   .nav1 a:hover {
@@ -1088,6 +1087,3 @@ footer {
   border-radius: 10px;
   display: block;
 }
-
-
-
